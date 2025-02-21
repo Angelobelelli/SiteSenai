@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function footer() {
+const PaginaErro = () => {
   return (
     <div>
       
     </div>
   )
 }
+
+export default PaginaErro

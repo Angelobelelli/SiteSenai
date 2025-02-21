@@ -1,20 +1,15 @@
 import React from 'react'
+import NavBar from './NavBar'
 
-export default function header() {
+const Header = () => {
   return (
     <div>
-      <header>
-        <nav>
-            <img src="" alt="" />
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                
-            </ul>
-        </nav>
+      <header className='flex justify-between items-center p-4 bg-[#2454A0] text-white'>
+        <img src="logoSenai.svg" alt="" />
+        <NavBar />
       </header>
     </div>
   )
 }
+
+export default Header

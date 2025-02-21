@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import Header from './components/header'
-import './App.css'
+import "./App.css";
+import { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header/>
+     
+      <Outlet />
+      <Link to="/home">Home</Link>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
