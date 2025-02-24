@@ -15,11 +15,11 @@ const NavBar = () => {
 							Home
 						</NavLink>
 						<NavLink
-							to="/cadastro"
+							to="/cursos"
 							style={({isActive}) => ({
 								color: isActive ? '#001b47' : 'white',
 							})}>
-							Cadastro
+							Cursos
 						</NavLink>
 						<NavLink
 							to="/contato"
