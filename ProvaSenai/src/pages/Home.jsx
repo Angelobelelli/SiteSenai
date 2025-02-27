@@ -3,6 +3,7 @@ import Header from '../components/Header.jsx';
 import {useState} from 'react';
 import CardProps from '../components/CardProps.jsx';
 import cursosSenai from '../data/cursos.js';
+import Footer from '../components/Footer.jsx';
 
 const Home = () => {
 	const [cursos] = useState(cursosSenai);
@@ -50,7 +51,7 @@ const Home = () => {
 					))}
 				</div>
 			</div>
-			
+			<Footer/>
 		</div>
 	);
 };
