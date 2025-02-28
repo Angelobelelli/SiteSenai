@@ -11,6 +11,7 @@ import PaginaErro from './pages/PaginaErro.jsx';
 import Sobre from './pages/Sobre.jsx';
 import Login from './pages/Login.jsx';
 import Cursos from './pages/Cursos.jsx';
+import CursoDetalhes from './pages/CursoDetalhes.jsx';
 
 // Cria as rotas da aplicação
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
 			{
 				path: '/cursos',
 				element: <Cursos />,
+			},
+			{
+				path: '/curso/:id',
+				element: <CursoDetalhes />,
 			},
 		],
 	},

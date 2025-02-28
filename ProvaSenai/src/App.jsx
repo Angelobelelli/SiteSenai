@@ -9,7 +9,7 @@ function App() {
     <>
      
       <Outlet />
-      <Link to="/home">Home</Link>
+      
     </>
   );
 }

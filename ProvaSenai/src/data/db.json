@@ -1,0 +1,58 @@
+{
+	"cursos": [
+		{
+			"id": 1,
+			"imagem": "https://admin.loja.senaies.com.br/pub/media/catalog/product//t/_/t_cnico_em_desenvolvimento_de_sistemas_2_19.jpg",
+			"nome": "TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS",
+			"cidade": "Vitória",
+			"modalidade": "Presencial",
+			"cargaHoraria": "1200",
+			"descricao": "Curso para desenvolvimento de sistemas."
+		},
+		{
+			"id": 2,
+			"imagem": "https://admin.loja.senaies.com.br/pub/media/catalog/product//i/n/instrumentista_1.png",
+			"nome": "TÉCNICO EM MECÂNICA INDUSTRIAL",
+			"cidade": "Belo Horizonte",
+			"modalidade": "Presencial",
+			"cargaHoraria": "1400",
+			"descricao": "Curso técnico focado em mecânica industrial."
+		},
+		{
+			"id": 3,
+			"imagem": "https://admin.loja.senaies.com.br/pub/media/catalog/product//l/o/logistica__1_26.jpg",
+			"nome": "TÉCNICO EM LOGISTICA",
+			"cidade": "São Paulo",
+			"modalidade": "Presencial",
+			"cargaHoraria": "1000",
+			"descricao": "Curso voltado para design gráfico e multimídia."
+		},
+		{
+			"id": 4,
+			"imagem": "https://admin.loja.senaies.com.br/pub/media/catalog/product//e/l/eletromecanica__1_19.jpg",
+			"nome": "TÉCNICO EM ELETROMECÂNICA",
+			"cidade": "Rio de Janeiro",
+			"modalidade": "Presencial",
+			"cargaHoraria": "800",
+			"descricao": "Curso de automação para sistemas residenciais."
+		},
+		{
+			"id": 5,
+			"imagem": "https://admin.loja.senaies.com.br/pub/media/catalog/product//m/e/mecanica__8_1.jpg",
+			"nome": "TÉCNICO EM MECÂNICA",
+			"cidade": "Curitiba",
+			"modalidade": "EAD",
+			"cargaHoraria": "1200",
+			"descricao": "Curso para capacitação em gestão de empresas."
+		},
+		{
+			"id": 6,
+			"imagem": "https://admin.loja.senaies.com.br/pub/media/catalog/product//t/_/t_cnico-em-eletrot_cnica_12_11.jpg",
+			"nome": "TÉCNICO EM ELETROTÉCNICA",
+			"cidade": "Porto Alegre",
+			"modalidade": "Presencial",
+			"cargaHoraria": "1300",
+			"descricao": "Curso de eletrônica focado na área industrial."
+		}
+	]
+}

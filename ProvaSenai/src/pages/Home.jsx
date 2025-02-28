@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from '../components/Header.jsx';
-import {useState} from 'react';
 import CardProps from '../components/CardProps.jsx';
-import cursosSenai from '../data/cursos.js';
+
 
 const Home = () => {
-	const [cursos] = useState(cursosSenai);
+	const [cursos, setCursos] = useState([]);
+
+	useEffect(() => {
+		fetch('http://localhost:3000/cursos') // Busca os cursos do db.json
+			.then((res) => res.json())
+			.then((data) => setCursos(data))
+			.catch((error) => console.error('Erro ao buscar cursos:', error));
+	}, []);
+
 	return (
 		<div>
 			<Header />
@@ -24,7 +31,7 @@ const Home = () => {
 					</h4>
 					<p className="text-left font-roboto text-[16px] w-[80%] ">
 						Os cursos técnicos do Senai-ES estão alinhados às maiores
-						necessidades das indústrias capixabas e obtém índices excelentes de
+						necessidades das indústrias capixabas e obtêm índices excelentes de
 						aprovação no mercado de trabalho. Na última pesquisa de
 						acompanhamento de egressos realizada pela instituição, 95% das
 						empresas contratantes declararam que preferem profissionais formados
@@ -34,12 +41,13 @@ const Home = () => {
 			</div>
 			<div className="container m-auto p-auto">
 				<h1 className="text-3xl font-semibold text-center mt-8">
-					Cursos do Senai{' '}
+					Cursos do Senai
 				</h1>
 				<div className="flex flex-wrap gap-4 justify-center ">
 					{cursos.map((curso) => (
 						<CardProps
 							key={curso.id}
+							id={curso.id}
 							nome={curso.nome}
 							imagem={curso.imagem}
 							cidade={curso.cidade}
@@ -50,7 +58,6 @@ const Home = () => {
 					))}
 				</div>
 			</div>
-			
 		</div>
 	);
 };
